@@ -12,18 +12,17 @@ public class Test{
                         int temp = shuzu[j];
                         shuzu[j] = shuzu[j+1];
                         shuzu[j+1] = temp;
-						didSwap = true;
+			didSwap = true;
                     }
                 }
-			    if (didSwap == false){
-					return;
-				}
+		if (didSwap == false){
+			return;
+		}
             }
             System.out.print("排序后：");
             for (int k = 0;k < num; k++){
                 System.out.print(shuzu[k]+" ");
             }
- 
         }
         //直接插入排序函数
         public static void DirectInsertSort(int[] shuzi, int num){
@@ -37,7 +36,7 @@ public class Test{
                     if(shuzu[j]>temp){
                         shuzu[j+1]=shuzu[j];
                     }else{
-						break;
+			    break;
                     }
                 }
                 shuzu[j+1] = temp;

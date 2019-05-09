@@ -24,16 +24,18 @@ public class Test{
         public static void DirectInsertSort(int[] shuzi, int num){
             int[] shuzu = new int[num];
             shuzu = shuzi;
+            int temp = 0;
             for(int i = 1;i < num;i++){
-                int temp = shuzu[i];
-                for(int j = i-1; j>=0; j--){
+                temp = shuzu[i];
+                int j=0;
+                for(j = i-1; j>=0; j--){
                     if(shuzu[j]>temp){
                         shuzu[j+1]=shuzu[j];
                     }else{
                         break;
                     }
-                    shuzu[j+1] = temp;
                 }
+                shuzu[j+1] = temp;
             }
             System.out.print("排序后：");
             for (int k = 0;k < num; k++){

@@ -12,12 +12,12 @@ public class Test{
                         int temp = shuzu[j];
                         shuzu[j] = shuzu[j+1];
                         shuzu[j+1] = temp;
-			didSwap = true;
+						didSwap = true;
                     }
                 }
-		if (didSwap == false){
-			return;
-		}
+			if (didSwap == false){
+				return;
+			}
             }
             System.out.print("排序后：");
             for (int k = 0;k < num; k++){
@@ -36,7 +36,7 @@ public class Test{
                     if(shuzu[j]>temp){
                         shuzu[j+1]=shuzu[j];
                     }else{
-			    break;
+						break;
                     }
                 }
                 shuzu[j+1] = temp;

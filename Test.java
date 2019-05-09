@@ -1,7 +1,7 @@
 //package package00;
 import java.util.*;
 public class Test{
-        //冒泡插入函数
+        //冒泡函数
         static void BubbleSort(int[] shuzi, int num){
             int[] shuzu = new int[num];
             shuzu = shuzi;
@@ -37,7 +37,7 @@ public class Test{
                     if(shuzu[j]>temp){
                         shuzu[j+1]=shuzu[j];
                     }else{
-                        break;
+						break;
                     }
                 }
                 shuzu[j+1] = temp;

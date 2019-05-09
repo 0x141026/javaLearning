@@ -1,7 +1,7 @@
 //package package00;
 import java.util.*;
 public class Test{
-        //冒泡插入函数
+        //鍐掓场鎻掑叆鍑芥暟
         static void BubbleSort(int[] shuzi, int num){
             int[] shuzu = new int[num];
             shuzu = shuzi;
@@ -14,13 +14,13 @@ public class Test{
                     }
                 }
             }
-            System.out.print("排序之后：");
+            System.out.print("鎺掑簭鍚庯細");
             for (int k = 0;k < num; k++){
                 System.out.print(shuzu[k]+" ");
             }
  
         }
-        //直接插入排序函数
+        //鐩存帴鎻掑叆鎺掑簭鍑芥暟
         public static void DirectInsertSort(int[] shuzi, int num){
             int[] shuzu = new int[num];
             shuzu = shuzi;
@@ -35,7 +35,7 @@ public class Test{
                     shuzu[j+1] = temp;
                 }
             }
-            System.out.print("排序之后：");
+            System.out.print("鎺掑簭鍚庯細");
             for (int k = 0;k < num; k++){
                 System.out.print(shuzu[k]+" ");
             }
@@ -60,4 +60,5 @@ public class Test{
             }
         }
 }
+
 

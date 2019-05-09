@@ -5,14 +5,19 @@ public class Test{
         static void BubbleSort(int[] shuzi, int num){
             int[] shuzu = new int[num];
             shuzu = shuzi;
+			boolean didSwap = false;
             for(int i = 0; i < num-1;i++){
                 for(int j = 0; j < num-i-1; j++){
                     if(shuzu[j]>shuzu[j+1]){
                         int temp = shuzu[j];
                         shuzu[j] = shuzu[j+1];
                         shuzu[j+1] = temp;
+						didSwap = true;
                     }
                 }
+			    if (didSwap == false){
+					return;
+				}
             }
             System.out.print("排序后：");
             for (int k = 0;k < num; k++){

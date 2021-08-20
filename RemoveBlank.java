@@ -4,6 +4,10 @@ import org.apache.commons.lang.StringUtils;
  * 移除字符串中空格并给出提示，没移除也给出提示。
  */
 public class Test {
+    public static boolean isNullOrEmpty(String s) {
+            return (s == null ||  s.length() == 0 || s.trim().length() == 0);
+    }
+    // 删除所有空格
     public static String removeBlank(String str, String logInfo) {
         String strTemp = str;
         String logTemp = logInfo;
